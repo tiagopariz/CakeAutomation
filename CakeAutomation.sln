@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeAutomation.Prompt", "src\CakeAutomation.Prompt\CakeAutomation.Prompt.csproj", "{B3B19363-3036-4E0E-9E23-C1CDCB2C7EB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B19363-3036-4E0E-9E23-C1CDCB2C7EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B19363-3036-4E0E-9E23-C1CDCB2C7EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B19363-3036-4E0E-9E23-C1CDCB2C7EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B19363-3036-4E0E-9E23-C1CDCB2C7EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {955E5277-5BDD-4922-90D2-B05D7B057E16}
+	EndGlobalSection
+EndGlobal

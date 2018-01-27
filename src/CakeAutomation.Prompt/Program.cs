@@ -2,12 +2,11 @@
 
 namespace CakeAutomation.Prompt
 {
-    internal class Program
+    class Program
     {
-        private static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Hello, Cake!");
-            Console.ReadKey();
+            Console.WriteLine("My first build automation!");
         }
     }
 }

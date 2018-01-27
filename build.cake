@@ -1,5 +1,7 @@
 var targetHello = Argument("target", "Default");
 var targetBuild = Argument("target", "Build");
+var configuration = Argument("configuration", "Release");
+var artifactsDirectory = MakeAbsolute(Directory("./artifacts"));
  
 Task("Default")
     .Does(() =>
@@ -12,7 +14,15 @@ RunTarget(targetHello);
 Task("Build")
     .Does(() =>
     {
-        MSBuild("./CakeAutomation.sln");
+        foreach(var project in GetFiles("./src/**/*.csproj"))
+        {
+            DotNetCoreBuild(
+                project.GetDirectory().FullPath, 
+                new DotNetCoreBuildSettings()
+                {
+                    Configuration = configuration
+                });
+        }
     });
 
 RunTarget(targetBuild);
